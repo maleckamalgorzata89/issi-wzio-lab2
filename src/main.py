@@ -1,3 +1,5 @@
+"""Demonstrate the calculator's arithmetic operations."""
+
 from issi_wzio_lab2 import Calculator
 
 if __name__ == '__main__':
