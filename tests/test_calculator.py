@@ -15,7 +15,7 @@ class TestCalculator:
     def test_sum_negative_numbers(self):
         """Check addition of negative numbers."""
         c = Calculator(-4.0, -2.0)
-        assert c.sum() == 6.0
+        assert c.sum() == -6.0
 
     def test_sum_large_numbers(self):
         """Check addition of large numbers."""
