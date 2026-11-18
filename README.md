@@ -1,1 +1,2 @@
 [![Pylint](https://github.com/maleckamalgorzata89/issi-wzio-lab2/actions/workflows/pylint.yml/badge.svg)](https://github.com/maleckamalgorzata89/issi-wzio-lab2/actions/workflows/pylint.yml)
+[![Python application](https://github.com/maleckamalgorzata89/issi-wzio-lab2/actions/workflows/python-app.yml/badge.svg)](https://github.com/maleckamalgorzata89/issi-wzio-lab2/actions/workflows/python-app.yml)
