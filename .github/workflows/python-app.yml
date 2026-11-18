@@ -38,3 +38,5 @@ jobs:
       env:
         PYTHONPATH: src
       run: python -m coverage run --source=src -m pytest
+    - name: Report coverage
+      run: python -m coverage report
