@@ -1,3 +1,5 @@
+"""Browser tests for the AGH website."""
+
 from playwright.sync_api import Page, expect
 
 def test_open_agh_website(page: Page):
@@ -29,7 +31,9 @@ def test_fields_of_study_subpage(page: Page) -> None:
     menu_element = page.get_by_role("link", name="Kandydaci", exact=True)
     menu_element.hover()
 
-    link = page.locator("#studenci-dla-kandydatow-kierunki").get_by_role("link", name="Nasze kierunki")
+    link = page.locator("#studenci-dla-kandydatow-kierunki").get_by_role(
+        "link", name="Nasze kierunki"
+    )
     expect(link).to_be_visible()
     link.click()
 
