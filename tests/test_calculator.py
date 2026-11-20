@@ -15,7 +15,7 @@ class TestCalculator:
     def test_sum_negative_numbers(self):
         """Check addition of negative numbers."""
         c = Calculator(-4.0, -2.0)
-        assert c.sum() == 6.0
+        assert c.sum() == -6.0
 
     def test_sum_large_numbers(self):
         """Check addition of large numbers."""
@@ -78,3 +78,12 @@ class TestCalculator:
         """Check division with a repeating decimal result."""
         c = Calculator(1.0, 3.0)
         assert c.divide() == pytest.approx(0.3333333333, abs=1e-9)
+
+    @pytest.mark.parametrize("a, b, expected", [
+        (2, 3, 5),
+        (-1, -2, -3),
+        (2.5, 3.5, 6.0),
+    ])
+    def test_add_parametrized(self, a, b, expected):
+        calc = Calculator(a, b)
+        assert calc.sum() == expected
