@@ -85,5 +85,6 @@ class TestCalculator:
         (2.5, 3.5, 6.0),
     ])
     def test_add_parametrized(self, a, b, expected):
+        """Check addition"""
         calc = Calculator(a, b)
         assert calc.sum() == expected
